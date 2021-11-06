@@ -7,7 +7,7 @@
 <ul>
   <% creatureData.forEach((creature, index)=>{ %>
   <li>
-    <%= creature.type %> is a <%= creature.img_url %>
+    <%= creature.type %> is a <img src="<%= creature.img_url %> " alt="" />
     <form
       action="/prehistoric_creatures/<%= index %>/?_method=DELETE"
       method="POST"
